@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SurveyForm</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Shopping Survey Form</h1>
+        <p class="description text-center">We need some data for deliver your product(s)</p>
+      </header>
+      <form id="survey-form" action="/action_page.php">
+      
+        <div class="form-group">
+          <label id="name-label">Name:</label>
+          <input 
+               id="name"
+               name = "name"
+               type="text"
+               class="form-control"
+               placeholder="Enter your name"
+               required>
+        </div>
+      
+        <div class="form-group">
+         <label id="email-label">Email:</label>
+         <input 
+               name = "email"
+               id="email"
+               type="email"
+               class="form-control"
+               placeholder="Enter your Email"
+               required>
+        </div>
+      
+       <div class="form-group">
+          <label id="number-label">Age:</label>
+          <input 
+               name = "age"
+               id="number"
+               type="number"
+               class="form-control"
+               placeholder="Age"
+               min="18"
+               max="100"
+               required>
+       </div>
+      
+       <div class="form-group">
+        <p>Select the way you want to pay your product</p>
+        <select id = "dropdown" name="payOption" class="form-control" required>
+          <option disabled selected>Choose your option</option>
+          <option value="creditCard">Credit card</option>
+          <option value="payPal">PayPal</option>
+          <option value="bitCoin">BitCoin</option>
+          <option value="thirdOption">Other options</option>
+         </select>        
+        </div>
+      
+       <div class="form-group">
+          <p>Select the ways to send you info about our products<p>
+          <label>
+          <input name = "recommend"                 
+                 value = "Definitely"
+                 type = "radio"                 
+                 class = "input-radio" checked/> Definitely
+         </label>
+         <label>
+          <input name = "recommend"                 
+                 value = "maybe"
+                 type = "radio"
+                 class = "input-radio"/> Maybe
+         </label>
+         <label>
+          <input name = "recommend"                 
+                 value = "not-sure"
+                 type = "radio"
+                 class = "input-radio"/> Not sure
+         </label>
+        </div>
+      
+        <div class ="form-group">
+          <p>Select the ways to send you info about our products<p>
+          <label>
+            <input name = "product-info"
+                   value = "email"
+                   type = "checkbox"
+                   class = "input-radio" checked/> Email
+          </label>
+          <label>
+            <input name = "product-info"            
+                   value = "text-messages"
+                   type = "checkbox"
+                   class = "input-radio"/> Text messages in the phone           
+          </label>
+          <label>
+            <input name = "product-info"  
+                   value = "social"
+                   type = "checkbox"
+                   class = "input-radio"/> Social media
+          </label>
+        </div>      
+      
+        <div class="form-group">
+          <p> For additional info you want to share to us please write here </p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here"></textarea>        
+        </div>
+      
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+          SUBMIT </button>
+        </div>      
+      </form>
+    </div>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
